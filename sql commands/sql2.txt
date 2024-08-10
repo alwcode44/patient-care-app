@@ -1,0 +1,15 @@
+CREATE TABLE medicines (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    dosage VARCHAR(50),
+    frequency VARCHAR(50),
+    start_date DATE,
+    end_date DATE,
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(Id)
+);
+
+ALTER TABLE medicines
+ADD COLUMN morning_time TIME NULL,
+ADD COLUMN afternoon_time TIME NULL,
+ADD COLUMN night_time TIME NULL;

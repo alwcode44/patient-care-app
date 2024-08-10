@@ -1,0 +1,10 @@
+CREATE TABLE users(
+    Id int PRIMARY KEY AUTO_INCREMENT,
+    Username varchar(200),
+    Email varchar(200),
+    Age int,
+    Password varchar(200)
+);
+
+ALTER TABLE users ADD COLUMN patient_details_submitted BOOLEAN DEFAULT FALSE;
+ALTER TABLE users ADD COLUMN Photo;
