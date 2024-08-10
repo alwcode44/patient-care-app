@@ -1,7 +1,7 @@
-# patient-care-app
+# Patient Care and Management system
 
 
-This is a Patient care and management app using LAMP stack.
+This is a Patient care and management webapp using LAMP stack.
 
 To install and run:
 1. Install XAMPP app and run Apache web server and mysql
